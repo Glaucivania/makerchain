@@ -110,6 +110,11 @@ O script `ingest.py` agora permite selecionar dinamicamente o splitter para divi
 
 ---
 
+## 🧩 Próximos Passos:
+- Integração com o OpenWebUI.
+- Explorar outras alternativas para banco vetorial.
+- Uso de arquitetura MCP.
+
 ## Contribuições 💡
 
 1. Fork o repositório
