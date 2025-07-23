@@ -9,10 +9,12 @@ from langchain.prompts import PromptTemplate
 DB_FAISS_PATH = "vectorstore/db_faiss"
 LOGS_DIR = "logs"
 
+OLLAMA_BASE_URL = os.getenv("OLLAMA_HOST", "http://host.docker.internal:11434")  
+
 class QAEngine:
     def __init__(self):
-        self.llm = ChatOllama(model="mistral")
-        self.embeddings = OllamaEmbeddings(model="mistral")
+        self.llm = ChatOllama(model="mistral", base_url=OLLAMA_BASE_URL)
+        self.embeddings = OllamaEmbeddings(model="mistral", base_url=OLLAMA_BASE_URL)
         self.db = FAISS.load_local(DB_FAISS_PATH, self.embeddings, allow_dangerous_deserialization=True)
         self.retriever = self.db.as_retriever()
 
