@@ -358,3 +358,52 @@ Pergunta atual: Quantos e quais são os pinos de interrupção externa tem o esp
 Resposta gerada:
  O ESP32 possui um total de 54 pinos, dentre eles existem alguns que podem ser usados como pinos de interrupção externa. No entanto, para obter uma lista detalhada dos mesmos é necessário consultar outros documentos ou fontes. No documento que forneceu não foi especificado detalhadamente quantos e quais são os pinos de interrupção externa em um ESP32.
 ========================================
+Pergunta do usuário:
+Quantas portas antológicas tem o esp32?
+
+Prompt final enviado ao LLM:
+Considere este histórico de perguntas e respostas:
+Pergunta atual: Quantas portas antológicas tem o esp32?
+
+Resposta gerada:
+ O ESP32 possui 16 portas analógicas.
+========================================
+Pergunta do usuário:
+Quantas portas antológicas tem o esp32?
+
+Prompt final enviado ao LLM:
+Considere este histórico de perguntas e respostas:
+Pergunta: Quantas portas antológicas tem o esp32?
+Resposta:  O ESP32 possui 16 portas analógicas.
+
+Pergunta atual: Quantas portas antológicas tem o esp32?
+
+Resposta gerada:
+ O ESP32 possui 16 portas analógicas.
+========================================
+Pergunta do usuário:
+Quantas portas antológicas tem o esp32?
+
+Prompt final enviado ao LLM:
+Considere este histórico de perguntas e respostas:
+Pergunta atual: Quantas portas antológicas tem o esp32?
+
+Resposta gerada:
+ O ESP32 possui 18 pinos digitais, dentre eles:
+- 4 pinos analógicos (pinos 18, 19, 32, 33)
+- Um pino de controle de profundidade de energia (pin ADC2_JTAG_EN)
+- Um pino para resetar o dispositivo (RESET)
+- Um pino de fluxo de dados entre a placa e um computador hospedeiro, conhecido como TX (Transmitter)
+- Um pino para receber sinais do computador hospedeiro, conhecido como RX (Receiver).
+No entanto, é importante lembrar que algumas portas podem ser usadas simultaneamente para vários fins diferentes dependendo da configuração do software. Por exemplo, alguns pinos digitais também podem ser usados como pinos analógicos.
+========================================
+Pergunta do usuário:
+Quantas portas analógicas tem o esp32?
+
+Prompt final enviado ao LLM:
+Considere este histórico de perguntas e respostas:
+Pergunta atual: Quantas portas analógicas tem o esp32?
+
+Resposta gerada:
+ O ESP32 possui 12 portas analógicas.
+========================================

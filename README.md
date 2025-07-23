@@ -110,6 +110,45 @@ O script `ingest.py` agora permite selecionar dinamicamente o splitter para divi
 
 ---
 
+## 🐳 Executando com Docker
+
+Você pode rodar o MakerChain via Docker de forma se preferir:
+
+### ✅ Pré-requisitos
+
+- [Docker](https://www.docker.com/) instalado
+
+---
+
+### 🚀 Passos para rodar
+
+1. Execute via Docker Compose:
+```bash
+docker-compose up --build
+```
+
+2. Acesse no navegador:
+```
+http://localhost:8000
+```
+---
+
+### 📦 docker-compose.yml usado
+
+```yaml
+services:
+  makerchain:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+```
+
 ## Contribuições 💡
 
 1. Fork o repositório
