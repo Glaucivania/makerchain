@@ -110,7 +110,6 @@ O script `ingest.py` agora permite selecionar dinamicamente o splitter para divi
 
 ---
 
-<<<<<<< HEAD
 ## 🐳 Executando com Docker
 
 Você pode rodar o MakerChain via Docker de forma se preferir:
@@ -149,12 +148,11 @@ services:
     environment:
       - OLLAMA_HOST=http://host.docker.internal:11434
 ```
-=======
+
 ## 🧩 Próximos Passos:
 - Integração com o OpenWebUI.
 - Explorar outras alternativas para banco vetorial.
 - Uso de arquitetura MCP.
->>>>>>> b669f7008878924198f5a05a2a54660264b10a13
 
 ## Contribuições 💡
 
